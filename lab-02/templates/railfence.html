@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rail Fence Cipher</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Rail Fence Cipher</h2>
+
+        <!-- Mã hóa -->
+        <form action="/rail_fence_encrypt" method="post">
+            <div class="form-group">
+                <label for="plain_text">Plain Text:</label>
+                <input type="text" class="form-control" id="plain_text" name="plain_text">
+            </div>
+            <div class="form-group">
+                <label for="rail_fence_key">Key:</label>
+                <input type="number" class="form-control" id="rail_fence_key" name="rail_fence_key">
+            </div>
+            <button type="submit" class="btn btn-primary">Encrypt</button>
+        </form>
+
+        <!-- Giải mã -->
+        <form action="/rail_fence_decrypt" method="post" style="margin-top: 20px;">
+            <div class="form-group">
+                <label for="cipher_text">Cipher Text:</label>
+                <input type="text" class="form-control" id="cipher_text" name="cipher_text">
+            </div>
+            <div class="form-group">
+                <label for="rail_fence_key">Key:</label>
+                <input type="number" class="form-control" id="rail_fence_key" name="rail_fence_key">
+            </div>
+            <button type="submit" class="btn btn-primary">Decrypt</button>
+        </form>
+    </div>
+</body>
+</html>
